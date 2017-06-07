@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Calculator]" parallel="methods">
+  <test name="Calculator(failed)" parallel="methods">
+    <groups>
+      <run>
+        <exclude name="Bugs"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="runner.CalculatorDivDoubleTest">
+        <methods>
+          <include name="testDivDoubleByZero"/>
+        </methods>
+      </class> <!-- runner.CalculatorDivDoubleTest -->
+    </classes>
+  </test> <!-- Calculator(failed) -->
+</suite> <!-- Failed suite [Calculator] -->
